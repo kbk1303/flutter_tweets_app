@@ -8,8 +8,9 @@ class RandomCountryProvider {
     initializeSocket();
   }
 
-void initializeSocket() async{
+Future<void> initializeSocket() async {
   webSocket = await WebSocket.connect('ws://localhost:7071');
+ //webSocket.add
 }
 
 
